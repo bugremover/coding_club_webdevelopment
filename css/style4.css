@@ -1,0 +1,19 @@
+
+.btn{
+	align-items:center;
+	font-size: 2rem;
+	font-weight: 500;
+	padding: 0.5em 1 em;
+	color: lightblue;
+	background-color: rgba(0, 12, 56,0.5);
+	border: 3pxpx solid grey;
+	border-radius: 20px;
+	transition: all 0.3s;
+	
+}
+.btn:hover {
+	transform: translate(-10px);
+	background-color: rgba(123, 46, 255, 0.75);
+	color: lightblue;
+
+}

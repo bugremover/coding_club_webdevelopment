@@ -1,0 +1,32 @@
+.mic{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+
+&::before,
+&::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 100%;
+	z-index: 2;
+	box-shadow: 0 0 20px 20px #1c084f;
+}
+&::before{
+	width: 400px;
+	height: 400px;
+	background-color: #1a084e;
+
+}
+
+&::after{
+	width: 250px;
+	height: 250px;
+	background-color: #2f1e5f;
+	animation:circle-size 0.8s linear infinite alternate;
+}
+}
