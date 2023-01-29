@@ -1,0 +1,40 @@
+import java.util.*;
+public class max_sum_1{
+    static int[] sumofarray(int[] a,int size,int search){
+        int start=0;
+        int end=1;
+        int sum=a[0];
+        while(end<=size){
+            while(sum>search&& start <end-1){
+                sum=sum-a[start];
+                start++;
+            }
+            if(sum ==search){
+                return new int[]{start,end-1};
+
+            }
+            if(end<size){
+                sum=sum+a[end];
+            }
+            end++;
+        }
+        return new int[]{-1};
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the size of the array :");
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+
+        }
+        System.out.println("Enter the sum to find sub array:");
+        int k=sc.nextInt();
+        int[] result=sumofarray(arr,n,k);
+        for(int val:result) {
+            System.out.println(val + "");
+        }
+
+    }
+}

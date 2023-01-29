@@ -1,0 +1,23 @@
+if we difine a class with no constructors the complier implicitly places  default constructors in your class but if we difine even one constructor
+ the complier doesnot does nothing
+A class can have one more than one constructor provided each constructors argument are differenrt iin number or datatype this is called constructor overlading
+
+
+note: a constructor is like a method that can have argument name is same as class name and no return type and not even void 
+
+method should have return type
+we can ues data members and class name as method name
+this refers to the calling object;
+static block run one time;
+non static block run for every objects
+static 
+non static
+constructor
+
+A class can contain one or more static blocks to make a static block we write the word static folloewed by brace brackets
+ex: static {}
+A static block called once in the entire program whenever the class is loaded into the memory.
+it can be used to perform tasks that must be executed only once before starting any program.
+A class can contain one or more static blocks it is created by directly writing brace brackets without any keyword it is called everytime an object of that class created
+but before the constructor.
+It can be used to perform task just after object creation.
